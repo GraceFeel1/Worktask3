@@ -26,7 +26,7 @@ html {
 
 body {
   margin: 0;
-  font: 16px/1.6 system-ui,"Noto Sans", sans-serif;
+  font: 16px/1.6 system-ui, "Noto Sans", sans-serif;
   color: var(--ink);
   background: linear-gradient(180deg, #0b0e12 0%, #12161d 100%);
 }
@@ -286,3 +286,23 @@ footer {
     font-size: 1.2rem
   }
 }
+
+
+.filters{ margin:10px 0 20px; }
+.filters .group{ display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin-bottom:10px; }
+.filters .group span{ color:var(--muted); margin-right:6px; }
+.filters input[type="radio"]{ position:absolute; left:-9999px; }
+.filters label{ background:#1b212a; border:1px solid #27303b; border-radius:999px; padding:6px 10px; cursor:pointer; }
+.filters input:checked + label{ border-color:#345069; color:var(--ink); }
+
+.cards .card{ display:block; }
+
+#cat-photo:checked ~ .cards .card:not([data-cat="photographer"]){ display:none; }
+#cat-model:checked ~ .cards .card:not([data-cat="model"]){ display:none; }
+#cat-stylist:checked ~ .cards .card:not([data-cat="stylist"]){ display:none; }
+#cat-mua:checked ~ .cards .card:not([data-cat="mua"]){ display:none; }
+
+#reg-miami:checked ~ .cards .card:not([data-region="miami-beach"]){ display:none; }
+#reg-hallandale:checked ~ .cards .card:not([data-region="hallandale-beach"]){ display:none; }
+#reg-sunny:checked ~ .cards .card:not([data-region="sunny-isles"]){ display:none; }
+#reg-downtown:checked ~ .cards .card:not([data-region="downtown-miami"]){ display:none; }

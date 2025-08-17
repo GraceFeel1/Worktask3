@@ -14,7 +14,7 @@
     </a>
     <nav class="primary" aria-label="Основная навигация">
       <a href="./region.html">Регионы</a>
-      <a href="./category.html" aria-current="page">Рубрики</a>
+      <a href="./category.html" aria-current="page">Категории</a>
     </nav>
   </div>
 </header>
@@ -31,42 +31,291 @@
     <nav class="list-row" aria-label="Переключение регионов">
       <a href="./region.html">Майами-Бич</a>
       <a href="./region.html">Халландейл-Бич</a>
-      <a href="./region.html">Санні-Айлс</a>
+      <a href="./region.html">Санни-Айлс</a>
       <a href="./region.html">Даунтаун Майами</a>
     </nav>
   </section>
 
   <section class="section">
     <h2>Профили — Фотографы</h2>
+    
+<section class="filters" aria-label="Фильтр">
+      <div class="group">
+        <span>Рубрика:</span>
+        <input type="radio" name="cat" id="cat-all" checked><label for="cat-all">Все</label>
+        <input type="radio" name="cat" id="cat-photo"><label for="cat-photo">Фотографы</label>
+        <input type="radio" name="cat" id="cat-model"><label for="cat-model">Модели</label>
+        <input type="radio" name="cat" id="cat-stylist"><label for="cat-stylist">Стилисты</label>
+        <input type="radio" name="cat" id="cat-mua"><label for="cat-mua">Визажисты</label>
+      </div>
+</section>
+
     <div class="cards">
-      <article class="card">
-        <a href="./post.html">
-          <img src="./img/photo_1.jpg" alt="Профиль Анна, фотограф" loading="lazy">
-          <div class="body">
-            <h3>Анна</h3>
-            <div class="meta"><span class="badge">Майами-Бич</span><span class="badge">Фотограф</span><span class="when">08.08.2025, 11:43</span></div>
-          </div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="./post.html">
-          <img src="./img/photo_2.jpg" alt="Профиль Олексій, фотограф" loading="lazy">
-          <div class="body">
-            <h3>Олексій</h3>
-            <div class="meta"><span class="badge">Санні-Айлс</span><span class="badge">Фотограф</span><span class="when">09.08.2025, 09:10</span></div>
-          </div>
-        </a>
-      </article>
-      <article class="card">
-        <a href="./post.html">
-          <img src="./img/photo_6.jpg" alt="Профиль Даниил, фотограф" loading="lazy">
-          <div class="body">
-            <h3>Даниил</h3>
-            <div class="meta"><span class="badge">Даунтаун Майами</span><span class="badge">Фотограф</span><span class="when">10.08.2025, 15:30</span></div>
-          </div>
-        </a>
-      </article>
-    </div>
+
+        <article class="card" data-cat="photographer" data-region="miami-beach">
+          <a href="./post.html">
+            <img src="./img/photo_1.jpg" alt="Профиль Анна, Фотограф в Майами-Бич" loading="lazy">
+            <div class="body">
+              <h3>Анна</h3>
+              <div class="meta"><span class="badge">Майами-Бич</span><span class="badge">Фотограф</span><span
+                  class="when">08.08.2025, 10:00</span></div>
+            </div>
+          </a>
+        </article>
+
+        <article class="card" data-cat="model" data-region="hallandale-beach">
+          <a href="./post.html">
+            <img src="./img/photo_2.jpg" alt="Профиль Марк, Модель в Халландейл-Бич" loading="lazy">
+            <div class="body">
+              <h3>Марк</h3>
+              <div class="meta"><span class="badge">Халландейл-Бич</span><span class="badge">Модель</span><span
+                  class="when">09.08.2025, 11:13</span></div>
+            </div>
+          </a>
+        </article>
+
+        <article class="card" data-cat="stylist" data-region="sunny-isles">
+          <a href="./post.html">
+            <img src="./img/photo_3.jpg" alt="Профиль Ева, Стилист в Санни-Айлс" loading="lazy">
+            <div class="body">
+              <h3>Ева</h3>
+              <div class="meta"><span class="badge">Санни-Айлс</span><span class="badge">Стилист</span><span
+                  class="when">10.08.2025, 12:26</span></div>
+            </div>
+          </a>
+        </article>
+
+        <article class="card" data-cat="mua" data-region="downtown-miami">
+          <a href="./post.html">
+            <img src="./img/photo_4.jpg" alt="Профиль Даниил, Визажист в Даунтаун Майами" loading="lazy">
+            <div class="body">
+              <h3>Даниил</h3>
+              <div class="meta"><span class="badge">Даунтаун Майами</span><span class="badge">Визажист</span><span
+                  class="when">08.08.2025, 13:39</span></div>
+            </div>
+          </a>
+        </article>
+
+        <article class="card" data-cat="photographer" data-region="miami-beach">
+          <a href="./post.html">
+            <img src="./img/photo_1.jpg" alt="Профиль София, Фотограф в Майами-Бич" loading="lazy">
+            <div class="body">
+              <h3>София</h3>
+              <div class="meta"><span class="badge">Майами-Бич</span><span class="badge">Фотограф</span><span
+                  class="when">09.08.2025, 14:52</span></div>
+            </div>
+          </a>
+        </article>
+
+        <article class="card" data-cat="model" data-region="hallandale-beach">
+          <a href="./post.html">
+            <img src="./img/photo_6.jpg" alt="Профиль Алексей, Модель в Халландейл-Бич" loading="lazy">
+            <div class="body">
+              <h3>Алексей</h3>
+              <div class="meta"><span class="badge">Халландейл-Бич</span><span class="badge">Модель</span><span
+                  class="when">10.08.2025, 15:05</span></div>
+            </div>
+          </a>
+        </article>
+
+        <article class="card" data-cat="stylist" data-region="sunny-isles">
+          <a href="./post.html">
+            <img src="./img/photo_3.jpg" alt="Профиль Полина, Стилист в Санни-Айлс" loading="lazy">
+            <div class="body">
+              <h3>Полина</h3>
+              <div class="meta"><span class="badge">Санни-Айлс</span><span class="badge">Стилист</span><span
+                  class="when">08.08.2025, 10:18</span></div>
+            </div>
+          </a>
+        </article>
+
+        <article class="card" data-cat="mua" data-region="downtown-miami">
+          <a href="./post.html">
+            <img src="./img/photo_1.jpg" alt="Профиль Наталі, Визажист в Даунтаун Майами" loading="lazy">
+            <div class="body">
+              <h3>Натали</h3>
+              <div class="meta"><span class="badge">Даунтаун Майами</span><span class="badge">Визажист</span><span
+                  class="when">09.08.2025, 11:31</span></div>
+            </div>
+          </a>
+        </article>
+
+        <article class="card" data-cat="photographer" data-region="miami-beach">
+          <a href="./post.html">
+            <img src="./img/photo_6.jpg" alt="Профиль Влад, Фотограф в Майами-Бич" loading="lazy">
+            <div class="body">
+              <h3>Влад</h3>
+              <div class="meta"><span class="badge">Майами-Бич</span><span class="badge">Фотограф</span><span
+                  class="when">10.08.2025, 12:44</span></div>
+            </div>
+          </a>
+        </article>
+
+        <article class="card" data-cat="model" data-region="hallandale-beach">
+          <a href="./post.html">
+            <img src="./img/photo_3.jpg" alt="Профиль Ирина, Модель в Халландейл-Бич" loading="lazy">
+            <div class="body">
+              <h3>Ирина</h3>
+              <div class="meta"><span class="badge">Халландейл-Бич</span><span class="badge">Модель</span><span
+                  class="when">08.08.2025, 13:57</span></div>
+            </div>
+          </a>
+        </article>
+
+        <article class="card" data-cat="stylist" data-region="sunny-isles">
+          <a href="./post.html">
+            <img src="./img/photo_1.jpg" alt="Профиль Екатерина, Стилист в Санни-Айлс" loading="lazy">
+            <div class="body">
+              <h3>Екатерина</h3>
+              <div class="meta"><span class="badge">Санни-Айлс</span><span class="badge">Стилист</span><span
+                  class="when">09.08.2025, 14:10</span></div>
+            </div>
+          </a>
+        </article>
+
+        <article class="card" data-cat="mua" data-region="downtown-miami">
+          <a href="./post.html">
+            <img src="./img/photo_3.jpg" alt="Профиль Анна, Визажист в Даунтаун Майами" loading="lazy">
+            <div class="body">
+              <h3>Анна</h3>
+              <div class="meta"><span class="badge">Даунтаун Майами</span><span class="badge">Визажист</span><span
+                  class="when">10.08.2025, 15:23</span></div>
+            </div>
+          </a>
+        </article>
+
+        <article class="card" data-cat="photographer" data-region="miami-beach">
+          <a href="./post.html">
+            <img src="./img/photo_2.jpg" alt="Профиль Тоні, Фотограф в Майами-Бич" loading="lazy">
+            <div class="body">
+              <h3>Тони</h3>
+              <div class="meta"><span class="badge">Майами-Бич</span><span class="badge">Фотограф</span><span
+                  class="when">08.08.2025, 10:36</span></div>
+            </div>
+          </a>
+        </article>
+
+        <article class="card" data-cat="model" data-region="hallandale-beach">
+          <a href="./post.html">
+            <img src="./img/photo_1.jpg" alt="Профиль Леся, Модель в Халландейл-Бич" loading="lazy">
+            <div class="body">
+              <h3>Леся</h3>
+              <div class="meta"><span class="badge">Халландейл-Бич</span><span class="badge">Модель</span><span
+                  class="when">09.08.2025, 11:49</span></div>
+            </div>
+          </a>
+        </article>
+
+        <article class="card" data-cat="stylist" data-region="sunny-isles">
+          <a href="./post.html">
+            <img src="./img/photo_3.jpg" alt="Профиль Вероника, Стилист в Санни-Айлс" loading="lazy">
+            <div class="body">
+              <h3>Вероника</h3>
+              <div class="meta"><span class="badge">Санни-Айлс</span><span class="badge">Стилист</span><span
+                  class="when">10.08.2025, 12:02</span></div>
+            </div>
+          </a>
+        </article>
+
+        <article class="card" data-cat="mua" data-region="downtown-miami">
+          <a href="./post.html">
+            <img src="./img/photo_6.jpg" alt="Профиль Майкл, Визажист в Даунтаун Майами" loading="lazy">
+            <div class="body">
+              <h3>Майкл</h3>
+              <div class="meta"><span class="badge">Даунтаун Майами</span><span class="badge">Визажист</span><span
+                  class="when">08.08.2025, 13:15</span></div>
+            </div>
+          </a>
+        </article>
+
+        <article class="card" data-cat="photographer" data-region="miami-beach">
+          <a href="./post.html">
+            <img src="./img/photo_4.jpg" alt="Профиль Илья, Фотограф в Майами-Бич" loading="lazy">
+            <div class="body">
+              <h3>Илья</h3>
+              <div class="meta"><span class="badge">Майами-Бич</span><span class="badge">Фотограф</span><span
+                  class="when">09.08.2025, 14:28</span></div>
+            </div>
+          </a>
+        </article>
+
+        <article class="card" data-cat="model" data-region="hallandale-beach">
+          <a href="./post.html">
+            <img src="./img/photo_3.jpg" alt="Профиль Елена, Модель в Халландейл-Бич" loading="lazy">
+            <div class="body">
+              <h3>Елена</h3>
+              <div class="meta"><span class="badge">Халландейл-Бич</span><span class="badge">Модель</span><span
+                  class="when">10.08.2025, 15:41</span></div>
+            </div>
+          </a>
+        </article>
+
+        <article class="card" data-cat="stylist" data-region="sunny-isles">
+          <a href="./post.html">
+            <img src="./img/photo_2.jpg" alt="Профиль Артем, Стилист в Санни-Айлс" loading="lazy">
+            <div class="body">
+              <h3>Артем</h3>
+              <div class="meta"><span class="badge">Санни-Айлс</span><span class="badge">Стилист</span><span
+                  class="when">08.08.2025, 10:54</span></div>
+            </div>
+          </a>
+        </article>
+
+        <article class="card" data-cat="mua" data-region="downtown-miami">
+          <a href="./post.html">
+            <img src="./img/photo_1.jpg" alt="Профиль Юлия, Визажист в Даунтаун Майами" loading="lazy">
+            <div class="body">
+              <h3>Юлия</h3>
+              <div class="meta"><span class="badge">Даунтаун Майами</span><span class="badge">Визажист</span><span
+                  class="when">09.08.2025, 11:07</span></div>
+            </div>
+          </a>
+        </article>
+
+        <article class="card" data-cat="photographer" data-region="miami-beach">
+          <a href="./post.html">
+            <img src="./img/photo_6.jpg" alt="Профиль Стан, Фотограф в Майами-Бич" loading="lazy">
+            <div class="body">
+              <h3>Стан</h3>
+              <div class="meta"><span class="badge">Майами-Бич</span><span class="badge">Фотограф</span><span
+                  class="when">10.08.2025, 12:20</span></div>
+            </div>
+          </a>
+        </article>
+
+        <article class="card" data-cat="model" data-region="hallandale-beach">
+          <a href="./post.html">
+            <img src="./img/photo_3.jpg" alt="Профиль Александра, Модель в Халландейл-Бич" loading="lazy">
+            <div class="body">
+              <h3>Александра</h3>
+              <div class="meta"><span class="badge">Халландейл-Бич</span><span class="badge">Модель</span><span
+                  class="when">08.08.2025, 13:33</span></div>
+            </div>
+          </a>
+        </article>
+
+        <article class="card" data-cat="stylist" data-region="sunny-isles">
+          <a href="./post.html">
+            <img src="./img/photo_1.jpg" alt="Профиль Рита, Стилист в Санни-Айлс" loading="lazy">
+            <div class="body">
+              <h3>Рита</h3>
+              <div class="meta"><span class="badge">Санни-Айлс</span><span class="badge">Стилист</span><span
+                  class="when">09.08.2025, 14:46</span></div>
+            </div>
+          </a>
+        </article>
+
+        <article class="card" data-cat="mua" data-region="downtown-miami">
+          <a href="./post.html">
+            <img src="./img/photo_4.jpg" alt="Профиль Григорий, Визажист в Даунтаун Майами" loading="lazy">
+            <div class="body">
+              <h3>Григорий</h3>
+              <div class="meta"><span class="badge">Даунтаун Майами</span><span class="badge">Визажист</span><span
+                  class="when">10.08.2025, 15:59</span></div>
+            </div>
+          </a>
+        </article>
+      </div>
   </section>
 </main>
 
