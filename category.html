@@ -1,56 +1,62 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Фотографы в Майами</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-<header>
-  <div class="container header-inner">
-    <a class="logo" href="./index.html">
-      <img src="./img/logo.png" alt="ModelConnect Miami" loading="lazy"><span>ModelConnect Miami</span>
-    </a>
-    <nav class="primary" aria-label="Основная навигация">
-      <a href="./region.html">Регионы</a>
-      <a href="./category.html" aria-current="page">Категории</a>
+  <header>
+    <div class="container header-inner">
+      <a class="logo" href="./index.html">
+        <img src="./img/logo.png" alt="ModelConnect Miami" loading="lazy"><span>ModelConnect Miami</span>
+      </a>
+      <nav class="primary" aria-label="Основная навигация">
+        <a href="./region.html">Регионы</a>
+        <a href="./category.html" aria-current="page">Категории</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <nav class="breadcrumb" aria-label="Хлебные крошки">
+      <a href="./index.html">Главная</a> → <span>Фотографы</span>
     </nav>
-  </div>
-</header>
 
-<main class="container">
-  <nav class="breadcrumb" aria-label="Хлебные крошки">
-    <a href="./index.html">Главная</a> → <span>Фотографы</span>
-  </nav>
+    <h1>Фотографы в Майами</h1>
 
-  <h1>Фотографы в Майами</h1>
+    <section class="section">
+      <h2>Выберите регион</h2>
+      <nav class="list-row" aria-label="Переключение регионов">
+        <a href="./region.html">Майами-Бич</a>
+        <a href="./region.html">Халландейл-Бич</a>
+        <a href="./region.html">Санни-Айлс</a>
+        <a href="./region.html">Даунтаун Майами</a>
+      </nav>
+    </section>
 
-  <section class="section">
-    <h2>Выберите регион</h2>
-    <nav class="list-row" aria-label="Переключение регионов">
-      <a href="./region.html">Майами-Бич</a>
-      <a href="./region.html">Халландейл-Бич</a>
-      <a href="./region.html">Санни-Айлс</a>
-      <a href="./region.html">Даунтаун Майами</a>
-    </nav>
-  </section>
+    <section class="section">
+      <h2>Профили — Фотографы</h2>
 
-  <section class="section">
-    <h2>Профили — Фотографы</h2>
-    
-<section class="filters" aria-label="Фильтр">
-      <div class="group">
-        <span>Рубрика:</span>
-        <input type="radio" name="cat" id="cat-all" checked><label for="cat-all">Все</label>
-        <input type="radio" name="cat" id="cat-photo"><label for="cat-photo">Фотографы</label>
-        <input type="radio" name="cat" id="cat-model"><label for="cat-model">Модели</label>
-        <input type="radio" name="cat" id="cat-stylist"><label for="cat-stylist">Стилисты</label>
-        <input type="radio" name="cat" id="cat-mua"><label for="cat-mua">Визажисты</label>
-      </div>
-</section>
-
-    <div class="cards">
+      <section class="filters" aria-label="Фильтр">
+        <div class="group">
+          <span>Категория:</span>
+          <label for="cat-all">Все</label>
+          <label for="cat-photo">Фотографы</label>
+          <label for="cat-model">Модели</label>
+          <label for="cat-stylist">Стилисты</label>
+          <label for="cat-mua">Визажисты</label>
+        </div>
+      </section>
+      <input style="display: none;" type="radio" name="cat" id="cat-all" checked>
+      <input style="display: none;" type="radio" name="cat" id="cat-photo">
+      <input style="display: none;" type="radio" name="cat" id="cat-model">
+      <input style="display: none;" type="radio" name="cat" id="cat-stylist">
+      <input style="display: none;" type="radio" name="cat" id="cat-mua">
+      <div class="cards">
 
         <article class="card" data-cat="photographer" data-region="miami-beach">
           <a href="./post.html">
@@ -316,11 +322,12 @@
           </a>
         </article>
       </div>
-  </section>
-</main>
+    </section>
+  </main>
 
-<footer>
-  <div class="container">© 2025 ModelConnect Miami</div>
-</footer>
+  <footer>
+    <div class="container">© 2025 ModelConnect Miami</div>
+  </footer>
 </body>
+
 </html>

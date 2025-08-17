@@ -1,56 +1,63 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Профили – Халландейл-Бич</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-<header>
-  <div class="container header-inner">
-    <a class="logo" href="./index.html">
-      <img src="./img/logo.png" alt="ModelConnect Miami" loading="lazy"><span>ModelConnect Miami</span>
-    </a>
-    <nav class="primary" aria-label="Основная навигация">
-      <a href="./region.html" aria-current="page">Регионы</a>
-      <a href="./category.html">Категории</a>
+  <header>
+    <div class="container header-inner">
+      <a class="logo" href="./index.html">
+        <img src="./img/logo.png" alt="ModelConnect Miami" loading="lazy"><span>ModelConnect Miami</span>
+      </a>
+      <nav class="primary" aria-label="Основная навигация">
+        <a href="./region.html" aria-current="page">Регионы</a>
+        <a href="./category.html">Категории</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <nav class="breadcrumb" aria-label="Хлебные крошки">
+      <a href="./index.html">Главная</a> → <span>Халландейл-Бич</span>
     </nav>
-  </div>
-</header>
 
-<main class="container">
-  <nav class="breadcrumb" aria-label="Хлебные крошки">
-    <a href="./index.html">Главная</a> → <span>Халландейл-Бич</span>
-  </nav>
+    <h1>Профили – Халландейл-Бич</h1>
 
-  <h1>Профили – Халландейл-Бич</h1>
+    <section class="section">
+      <h2>Выберите рубрику</h2>
+      <nav class="list-row" aria-label="Фильтр по рубрикам">
+        <a href="./category.html">Фотографы</a>
+        <a href="./category.html">Модели</a>
+        <a href="./category.html">Стилисты</a>
+        <a href="./category.html">Визажисты</a>
+      </nav>
+    </section>
 
-  <section class="section">
-    <h2>Выберите рубрику</h2>
-    <nav class="list-row" aria-label="Фильтр по рубрикам">
-      <a href="./category.html">Фотографы</a>
-      <a href="./category.html">Модели</a>
-      <a href="./category.html">Стилисты</a>
-      <a href="./category.html">Визажисты</a>
-    </nav>
-  </section>
+    <section class="section">
+      <h2>Профили региона</h2>
 
-  <section class="section">
-    <h2>Профили региона</h2>
-    
-<section class="filters" aria-label="Фильтр">
-     <div class="group">
-        <span>Город:</span>
-        <input type="radio" name="reg" id="reg-all" checked><label for="reg-all">Все</label>
-        <input type="radio" name="reg" id="reg-miami"><label for="reg-miami">Майами-Бич</label>
-        <input type="radio" name="reg" id="reg-hallandale"><label for="reg-hallandale">Халландейл-Бич</label>
-        <input type="radio" name="reg" id="reg-sunny"><label for="reg-sunny">Санни-Айлс</label>
-        <input type="radio" name="reg" id="reg-downtown"><label for="reg-downtown">Даунтаун Майами</label>
-      </div>
-</section>
+      <section class="filters" aria-label="Фильтр">
+        <div class="group">
+          <span>Город:</span>
+          <label for="reg-all">Все</label>
+          <label for="reg-miami">Майами-Бич</label>
+          <label for="reg-hallandale">Халландейл-Бич</label>
+          <label for="reg-sunny">Санни-Айлс</label>
+          <label for="reg-downtown">Даунтаун Майами</label>
+        </div>
+      </section>
+      <input style="display: none;" type="radio" name="reg" id="reg-all" checked>
+      <input style="display: none;" type="radio" name="reg" id="reg-miami">
+      <input style="display: none;" type="radio" name="reg" id="reg-hallandale">
+      <input style="display: none;" type="radio" name="reg" id="reg-sunny">
+      <input style="display: none;" type="radio" name="reg" id="reg-downtown">
 
-    <div class="cards">
+      <div class="cards">
 
         <article class="card" data-cat="photographer" data-region="miami-beach">
           <a href="./post.html">
@@ -316,11 +323,12 @@
           </a>
         </article>
       </div>
-  </section>
-</main>
+    </section>
+  </main>
 
-<footer>
-  <div class="container">© 2025 ModelConnect Miami</div>
-</footer>
+  <footer>
+    <div class="container">© 2025 ModelConnect Miami</div>
+  </footer>
 </body>
+
 </html>
